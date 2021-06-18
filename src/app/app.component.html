@@ -8,6 +8,14 @@
   .link-active {
     box-shadow: 0px 0px 3px 3px coral;
   }
+  .container ul {
+    width: 80%;
+    max-width: 680px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 </style>
 <div class="container">
   <ul>
@@ -18,7 +26,10 @@
     <li>
       <a routerLink="/sharereplay" routerLinkActive="link-active">share</a>
     </li>
+    <li>
+      <a routerLink="/parent" routerLinkActive="link-active">parent</a>
+    </li>
   </ul>
 </div>
-
+<app-col-media></app-col-media>
 <router-outlet></router-outlet>
